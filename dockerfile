@@ -10,8 +10,8 @@ COPY . .
 # Install the required Python packages
 RUN pip install --upgrade -r requirements.txt
 
-# Pull the DVC dataset
-RUN dvc pull
+# # Pull the DVC dataset
+# RUN dvc pull
 
 # Set the environment variable for the data path
 ENV DATA_FOR_DRIFT_PATH="./data/"
